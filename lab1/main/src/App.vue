@@ -15,7 +15,7 @@ import Vyatsu from '../../vyatsu/src/components/Vyatsu.vue';
 // const url = 'https://new.vyatsu.ru/';
 // const url = 'http://127.0.0.1:5500/main/src/components/8.Html';
 
-const url = 'http://localhost:8081/admission/';
+const url = 'http://localhost:8085/admission/';
 
 export default Vue.extend({
   name: 'App',
