@@ -3,6 +3,7 @@
     <Fio lastName = 'Орлов' firstName = 'Максим' middleName = 'Андреевич' > </Fio>
     <Vyatsu :results="results"></Vyatsu>
     <Register></Register>
+    <Table></Table>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import { Component } from 'vue-property-decorator';
 import Fio from '../../fio/src/components/Fio.vue';
 import Vyatsu from '../../vyatsu/src/components/Vyatsu.vue';
 import Register from '../../register/src/components/register.vue';
+import Table from '../../table/src/components/table.vue';
 
 // const url = 'https://new.vyatsu.ru/';
 // const url = 'http://127.0.0.1:5500/main/src/components/8.Html';
@@ -25,6 +27,7 @@ export default Vue.extend({
     Fio,
     Vyatsu,
     Register,
+    Table,
   },
   data() {
     return { Fio, results: [] };
