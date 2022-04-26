@@ -271,6 +271,8 @@ width: 300px;
 }
 </style>
 
+```
+
 <p align = center>Приложение Б
 
 <p align = center>(обязательное) 
