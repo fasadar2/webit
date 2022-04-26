@@ -3,15 +3,15 @@
 <img class="logo_big" src="../assets/logo.png">
 <form class="form">
 <img class="logo" src="../assets/logo.png">
-<h3 class="form_title">Регистрация</h3>
+<h3 class="form_title">Вход</h3>
 <p>
-<input type="text" id="rlog" class="form_input" placeholder="Логин">
+<input type="text" id="log" class="form_input" placeholder="Логин">
 </p>
 <p class="checkbox" >
-<input type="password" id="rpassword" class="form_input" placeholder="Пароль">
+<input type="password" id="password" class="form_input" placeholder="Пароль">
 </p>
 <p>
-<button type="button" v-on:click="signOn" class="form_btn">Зарегистрироваться</button>
+<button type="button" v-on:click="signIn" class="form_btn">Войти</button>
 </p>
 </form>
 </div>
@@ -21,7 +21,7 @@ import Vue from 'vue';
 import axios from 'axios';
 
 export default Vue.extend({
-  name: 'Register',
+  name: 'Enter',
   props: {
   },
   methods: {
@@ -46,8 +46,8 @@ export default Vue.extend({
       regBtn.style.color = 'green';
     },
     signIn() {
-      const log :HTMLInputElement = document.getElementById('rlog') as HTMLInputElement;
-      const password :HTMLInputElement = document.getElementById('rpassword') as HTMLInputElement;
+      const log :HTMLInputElement = document.getElementById('log') as HTMLInputElement;
+      const password :HTMLInputElement = document.getElementById('password') as HTMLInputElement;
       const config = {
         url: 'https://a02f853a-6182-4e81-ac3e-eba5acd42df0.mock.pstmn.io/auth/sign',
       };
